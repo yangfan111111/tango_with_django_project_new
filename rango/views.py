@@ -4,6 +4,7 @@ from rango.models import Category
 from rango.models import Page
 from rango.forms import CategoryForm, PageForm
 
+
 def index(request):
     # context_dict = {'boldmessage': "Crunchy, creamy, cookie, candy, cupcake!"}
     category_list = Category.objects.order_by('-likes')[:5]
